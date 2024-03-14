@@ -12,7 +12,7 @@ def main():
     print('Создаем базу данных и таблицы')
     db2 = db.create_database()
     print(f'База данных и таблицы созданы')
-    search_keyword = '1111'
+    search_keyword = 'Python'
     hh = HeadHunter(search_keyword)
     k = hh.get_request()
     print('Добавляем данные из запроса в БД')
@@ -32,8 +32,3 @@ def main():
     print("""Получаем список всех компаний и количество вакансий у каждой компании""")
     data_5 = db.get_vacancies_with_keyword('python')
     print(data_5)
-
-
-
-if __name__ == '__main__':
-    main()
